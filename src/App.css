@@ -1,0 +1,65 @@
+.App {
+  background-color: white;
+  margin: auto;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 17px;
+  border: 1px black solid;
+  border-radius: 3px;
+  position: absolute;
+  width:fit-content;
+  min-height: 800px;
+  top: 10%;
+  left: 5%;
+  right: 5%;
+}
+
+.navMain {
+  background-color: rgb(227, 236, 248);
+  margin: 2px;
+  text-overflow: clip;
+  padding: 10px;
+  width: 175px;
+  position: sticky;
+  top: 10%;
+}
+.navMob {
+  background-color: rgb(227, 236, 248);
+  margin: 2px;
+  text-align: center;
+  font-size: 90%;
+  position: sticky;
+  padding-top: 10px;
+  /* padding-bottom: 5px; */
+  top: 0%;
+  z-index: 9 !important;
+}
+
+.subNav {
+  background-color: white;
+  font-size: 90%;
+  position: relative;
+  left: 5px;
+  height: fit-content;
+}
+.content{
+  background-color: white;
+  margin: 2px;
+  position: relative;
+  padding: 10px;
+}
+.footer {
+  position: fixed;
+  color: black;
+  background-color: white;
+  border-radius: 1px;
+  bottom: 0%;
+  right: 0%;
+}
+
+a:link {
+  color: black;
+  text-decoration: underline;
+}
+a:visited {
+  color: black;
+}
