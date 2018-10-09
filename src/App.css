@@ -28,18 +28,21 @@
   text-align: center;
   font-size: 90%;
   position: sticky;
+  height: 30px;
+  overflow-y: unset;
   padding-top: 10px;
-  /* padding-bottom: 5px; */
   top: 0%;
   z-index: 9 !important;
 }
 
 .subNav {
-  background-color: white;
+  text-align: left;
+  background-color: rgb(227, 236, 248);
   font-size: 90%;
   position: relative;
   left: 5px;
   height: fit-content;
+  padding: 5px;
 }
 .content{
   background-color: white;

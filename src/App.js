@@ -15,13 +15,10 @@ class App extends Component {
       width: 1001,
     }
   }
+  
   getWidth = () => {
     this.setState({width: window.innerWidth})
   }
-  scrollToTop = () => {
-    window.scrollTo({top:0, behavior: "smooth"})
-  }
-
   componentDidMount() {
     this.getWidth();
     window.addEventListener('resize', this.getWidth.bind(this))
