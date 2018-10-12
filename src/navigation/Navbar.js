@@ -58,7 +58,7 @@ export class NavMob extends Component {
                         <NavSub name="The Planets" list={planets}/>
                     </Column>
                     <Column width="25%">
-                        <div>Other Objects</div>
+                        <NavSub name="Other Objects" list={others}/>
                     </Column>
                 </Row>
             </div>
@@ -67,7 +67,7 @@ export class NavMob extends Component {
 }
 
 
-class NavSub extends Component {
+export class NavSub extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -78,7 +78,7 @@ class NavSub extends Component {
         this.setState({expand: !this.state.expand})
     }
     render() {
-        const list = isMobile.isMobile() ? 
+        const list = isMobile.isMobile() || window.innerWidth < 1000 ? 
             <div onClick={this.handleClick}>{this.props.list}</div> : <div>{this.props.list}</div>;
 
         const styles = {
@@ -89,15 +89,13 @@ class NavSub extends Component {
             return (
                 <div>
                     <div onClick={this.handleClick}><u style={styles}>{this.props.name}</u></div>
-                </div>
-            )
+                </div>)
         } else {
             return (
                 <div>
                     <div onClick={this.handleClick}><span style={styles}>{this.props.name}</span></div>
                     {list}
-                </div>
-            )
+                </div>)
         }
     }
 }

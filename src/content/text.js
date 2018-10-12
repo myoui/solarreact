@@ -100,5 +100,10 @@ export const textContent = {
             <p>Once spacecraft visited the planet during NASA's Mariner missions in the 1960s and 70s, these concepts were radically broken. The results of the Viking life-detection experiments aided an intermission in which the hypothesis of a hostile, dead planet was generally accepted.[279]</p>
             <p>Mariner 9 and Viking allowed better maps of Mars to be made using the data from these missions, and another major leap forward was the Mars Global Surveyor mission, launched in 1996 and operated until late 2006, that allowed complete, extremely detailed maps of the Martian topography, magnetic field and surface minerals to be obtained.[280] These maps are available online; for example, at Google Mars. Mars Reconnaissance Orbiter and Mars Express continued exploring with new instruments, and supporting lander missions. NASA provides two online tools: Mars Trek, which provides visualizations of the planet using data from 50 years of exploration, and Experience Curiosity, which simulates traveling on Mars in 3-D with Curiosity.[281]</p>
         </div>
+    ),
+    jupiter: (
+        <div>
+            
+        </div>
     )
 }
