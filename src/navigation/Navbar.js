@@ -79,21 +79,17 @@ export class NavSub extends Component {
     }
     render() {
         const list = isMobile.isMobile() || window.innerWidth < 1000 ? 
-            <div onClick={this.handleClick}>{this.props.list}</div> : <div>{this.props.list}</div>;
-
-        const styles = {
-            cursor: 'pointer'
-        }
+            <div onClick={this.handleClick} style={{lineHeight: "35px"}}>{this.props.list}</div> : <div>{this.props.list}</div>;
 
         if (!this.state.expand) {
             return (
                 <div>
-                    <div onClick={this.handleClick}><u style={styles}>{this.props.name}</u></div>
+                    <div onClick={this.handleClick}><u style={{cursor: 'pointer'}}>{this.props.name}</u></div>
                 </div>)
         } else {
             return (
                 <div>
-                    <div onClick={this.handleClick}><span style={styles}>{this.props.name}</span></div>
+                    <div onClick={this.handleClick}><span style={{cursor: 'pointer'}}>{this.props.name}</span></div>
                     {list}
                 </div>)
         }
